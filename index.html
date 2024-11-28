@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-step Register Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <form class="form step1" action="#" method="post">
+        <p class="heading">Register</p>
+        <div class="form-control-list">
+          <div class="form-control-item">
+            <label class="form-control-label" for="name">Name</label>
+            <input class="form-control-input" type="text" id="name" name="name"
+                   placeholder="enter your name" required
+            >
+          </div>
+          <div class="form-control-item">
+            <label class="form-control-label" for="name">Email</label>
+            <input class="form-control-input" type="email" id="email" name="email"
+                   placeholder="example@gmail.com" required
+            >
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="btn">Continue</button>
+        </div>
+      </form>
+
+      <form class="form step2" action="#" method="post">
+        <p class="heading">Which topics you are interested in?</p>
+        <div class="form-control-list">
+          <div class="form-control-item">
+            <label class="form-checkbox-label" for="softwareDevelopment">
+              <input type="checkbox" name="userInterested" id="softwareDevelopment" value="Software Development">
+              <p>Software Development</p>
+            </label>
+          </div>
+          <div class="form-control-item">
+            <label class="form-checkbox-label" for="userExperience">
+              <input type="checkbox" name="userInterested" id="userExperience" value="User Experience">
+              <p>User Experience</p>
+            </label>
+          </div>
+          <div class="form-control-item">
+            <label class="form-checkbox-label" for="graphicDesign">
+              <input type="checkbox" name="userInterested" id="graphicDesign" value="Graphic Design">
+              <p>Graphic Design</p>
+            </label>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="btn">Continue</button>
+        </div>
+      </form>
+
+      <form class="form step3" action="#" method="post">
+        <p class="heading">Summary</p>
+        <div class="details">
+          <div>
+            <p>Name: <span class="white-text" id="userName"></span></p>
+            <p>Email: <span class="white-text" id="userEmail"></span></p>
+          </div>
+          <div>
+            <p>Topics:</p>
+            <ul class="userInterested">
+            </ul>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button type="submit" class="btn">Confirm</button>
+        </div>
+      </form>
+      <div class="link-step-container">
+        <p>Step <span id="numsStep">1</span> of 3</p>
+        <div class="step-radio-container">
+          <div class="step-radio-item radio-current-step"></div>
+          <div class="step-radio-item"></div>
+          <div class="step-radio-item"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
